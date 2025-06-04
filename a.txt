@@ -1,2 +1,5 @@
 우와 깃이다.
 git init
+
+
+PR :  Pull Request
