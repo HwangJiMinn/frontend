@@ -3,3 +3,7 @@ git init
 
 
 PR :  Pull Request
+
+나 작업하고 있어
+
+git stash
