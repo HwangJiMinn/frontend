@@ -1,9 +1,13 @@
-우와 깃이다.
-git init
+git restore --source 커밋아이디 파일명 // 특정 시점으로 파일을 복구
+
+git revert 커밋아이디 // 특정 커밋을 취소하는 명령어
+
+git reset 커밋아이디 // 과거로 되돌리는 명령어
 
 
-PR :  Pull Request
+auto import
+es7
+eslint
+live server
 
-나 작업하고 있어
 
-git stash
