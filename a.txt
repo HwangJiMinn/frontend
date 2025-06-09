@@ -3,3 +3,9 @@ git init
 
 
 PR :  Pull Request
+
+ git checkout -b travel
+
+ git add .
+ git commit -m "여행 페이지 공부"
+ git push
