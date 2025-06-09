@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style2.css" />
+  </head>
+  <body>
+    <!-- 네비게이션 -->
+    <nav>
+      <ul>
+        <li>
+          <a href="#intro">카페 소개</a>
+        </li>
+        <li>
+          <a href="#menu">메뉴</a>
+        </li>
+        <li>
+          <a href="#gallery">갤러리</a>
+        </li>
+        <li>
+          <a href="#contact">문의하기</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- 헤더 -->
+    <header>
+      <h1>Mocha's Cafe</h1>
+      <p>당신을 위한 향긋한 커피 한 잔</p>
+    </header>
+
+    <!-- 메인 콘텐츠 -->
+    <main>
+      <section id="intro">
+        <h2>카페소개</h2>
+        <p>Mocha's Cafe는 편안한 분위기의 동네 카페입니다.</p>
+        <p>주소: 서울 강남구 어딘가 123번지</p>
+      </section>
+
+      <section id="menu">
+        <h2>메뉴</h2>
+        <table>
+          <tr>
+            <th>메뉴</th>
+            <th>가격</th>
+          </tr>
+          <tr>
+            <td>아메리카노</td>
+            <td>3,000원</td>
+          </tr>
+          <tr>
+            <td>카페라떼</td>
+            <td>3,500원</td>
+          </tr>
+        </table>
+      </section>
+
+      <section id="gallery">
+        <h2>갤러리</h2>
+        <img
+          src="https://images.unsplash.com/photo-1740188305229-63c68ef04712?q=80&w=2912&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="커피"
+          width="200"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1740188305229-63c68ef04712?q=80&w=2912&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="카페"
+          width="200"
+        />
+      </section>
+
+      <section id="contact">
+        <h2>문의하기</h2>
+        <form>
+          <label for="name">이름:</label>
+          <input type="text" required id="name" /><br />
+
+          <label for="email">이메일</label>
+          <input type="email" id="name" /><br />
+
+          <label for="message">메세지</label> <br />
+          <textarea id="message"></textarea><br />
+
+          <button type="submit">보내기</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- 푸터 -->
+    <footer>
+      <p>© 2025 Mocha's Cafe. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

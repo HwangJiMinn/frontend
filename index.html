@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <h1 class="title">제일 중요한 제목</h1>
+      <p>이것은 문서의 본문입니다. 여기에 내용을 작성하세요.</p>
+
+      <div class="card">
+        <p class="title">123</p>
+        <span>
+          <p>1231</p>
+        </span>
+      </div>
+
+      <div>
+        <span>이게 span태그</span>
+        <b>이게 b태그</b>
+        <em>이게 em태그</em>
+      </div>
+      <div>
+        나 줄바꿈 하고싶어
+        <br />
+        근데 왜 안되지?
+      </div>
+      <ul>
+        <li>첫번째 리스트</li>
+        <li>두번째 리스트</li>
+        <li>세번째 리스트</li>
+      </ul>
+      <ol type="1" start="4">
+        <li>첫번째 리스트</li>
+        <li>두번째 리스트</li>
+        <li>세번째 리스트</li>
+      </ol>
+    </div>
+    <div>
+      <a href="https://www.naver.com">네이버</a>
+      <a href="https://www.naver.com" target="_blank"
+        >다른 탭으로 네이버 이동</a
+      >
+    </div>
+    <img src="./html.jpeg" alt="네이버에서 훔쳐옴" />
+
+    <table>
+      <thead>
+        <tr>
+          <th>이름</th>
+          <th>나이</th>
+          <th>직업</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>홍길동</td>
+          <td>30</td>
+          <td>프론트엔드 개발자</td>
+        </tr>
+        <tr>
+          <td>김철수</td>
+          <td>25</td>
+          <td>백엔드 개발자</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+
+  <form action="/api/url" method="post">
+    <label for="name">이름</label>
+    <input type="text" id="name" name="name" />
+
+    <label for="password">패스워드</label>
+    <input type="password" id="password" name="password" />
+
+    <label for="job">선택</label>
+    <select name="job" id="job">
+      <option value="frontend">프론트엔드 개발자</option>
+      <option value="backend">백엔드 개발자</option>
+    </select>
+
+    <label for="note">비고</label>
+    <textarea name="note" id="note" rows="4" cols="50"></textarea>
+
+    <button type="submit">제출</button>
+    <button type="reset">초기화</button>
+    <button type="button" onclick="fun()">그냥 버튼임</button>
+  </form>
+</html>
