@@ -28,3 +28,10 @@ e--; // e = e - 1;
 console.log('e--', e); // e = 1
 console.log('++e', ++e); // e = 2
 console.log('--e', --e); // e = 1
+
+console.log(e++); // 34번째 줄 이후에 값이 1이 증가가 됨
+console.log(e);
+console.log(++e); // 35번째 줄부터 값이 1이 증가되어있음
+
+// 나머지 연산
+console.log(5 % 3); // 2
