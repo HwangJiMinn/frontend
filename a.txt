@@ -16,6 +16,7 @@ git add .
 git commit -m "커밋 메세지"
 
 git push
+
 PR :  Pull Request
 
  git checkout -b travel
