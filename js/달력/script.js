@@ -26,29 +26,14 @@ const renderCalendar = (month, year) => {
     for (let j = 0; j < 7; j++) {
       // 최대 7일
       const cell = document.createElement('td');
+      cell.textContent = date;
+      date++;
 
       // 조건: 날짜를 제대로 td에 넣고, 오늘이면 today 클래스 추가
       // 힌트: firstDay, daysInMonth, today.getDate(), today.getMonth(), today.getFullYear() 등 활용
 
-      // todo: 화이팅!!
-      if (i === 0 && j < firstDay) {
-        cell.textContent = '';
-        cell.className = 'empty';
-      } else if (date > daysInMonth) {
-        cell.textContent = '';
-        cell.className = 'empty';
-      } else {
-        cell.textContent = date;
-        if (
-          year === today.getFullYear() &&
-          month === today.getMonth() &&
-          date === today.getDate()
-        ) {
-          cell.className = 'today';
-        }
-
-        date++;
-      }
+      // todo: 화이팅!!\
+      
 
       row.appendChild(cell);
     }

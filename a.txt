@@ -17,6 +17,11 @@ git commit -m "커밋 메세지"
 
 git push
 
+
+
+
+
+
 PR :  Pull Request
 
  git checkout -b travel
@@ -29,3 +34,4 @@ PR :  Pull Request
  git checkout 컨플릭트 나는 쪽 브랜치로 이동
  git pull
  git checkout 컨플릭트를 해결해야 하는 브랜치로 이동
+ git 
