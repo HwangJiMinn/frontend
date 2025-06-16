@@ -29,3 +29,4 @@ PR :  Pull Request
  git checkout 컨플릭트 나는 쪽 브랜치로 이동
  git pull
  git checkout 컨플릭트를 해결해야 하는 브랜치로 이동
+ git 
