@@ -30,3 +30,11 @@ PR :  Pull Request
  git pull
  git checkout 컨플릭트를 해결해야 하는 브랜치로 이동
  git 
+
+ls
+
+cd react-vite-01
+
+npm install
+
+npm run dev

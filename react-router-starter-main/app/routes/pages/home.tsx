@@ -1,0 +1,14 @@
+import { Link } from 'react-router';
+
+const Home = () => {
+  return (
+    <div className="flex h-[500px] flex-col items-center justify-center">
+      home
+      <Link to="/count" className="hover:bg-red-100">
+        카운트 라우터로 이동
+      </Link>
+    </div>
+  );
+};
+
+export default Home;
