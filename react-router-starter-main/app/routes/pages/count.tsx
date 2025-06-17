@@ -1,5 +1,7 @@
 import { useState } from 'react';
 
+import CountButton from '~/components/countButton';
+
 const Count = () => {
   const [count, setCount] = useState(0);
 
@@ -18,23 +20,17 @@ const Count = () => {
   return (
     <div className="flex h-[500px] flex-col items-center justify-center gap-[20px] bg-[lightgray]">
       <div>{count}</div>
-      <button
-        className="cursor-pointer bg-blue-100 p-[20px] hover:bg-blue-200"
-        onClick={() => {
-          handleCountPlus();
-        }}
-      >
-        +1 버튼
-      </button>
+      <CountButton
+        symbol="+1 버튼"
+        onClick={handleCountPlus}
+        // className="cursor-pointer bg-blue-100 p-[20px] hover:bg-blue-200"
+      />
 
-      <button
-        className="cursor-pointer bg-blue-100 p-[20px] hover:bg-blue-200"
-        onClick={() => {
-          handleCountMinus();
-        }}
-      >
-        -1 버튼
-      </button>
+      <CountButton
+        symbol="-1 버튼"
+        onClick={handleCountMinus}
+        // className="cursor-pointer bg-blue-100 p-[20px] hover:bg-blue-200"
+      />
     </div>
   );
 };

@@ -11,7 +11,7 @@ const UserFetcher = () => {
         console.log('데이터 가져옴', data);
         setUser(data);
       });
-  }, [user]);
+  }, [query]);
 
   return (
     <div>
