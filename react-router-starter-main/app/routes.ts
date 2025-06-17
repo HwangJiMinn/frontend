@@ -11,6 +11,10 @@ export default [
 
   route('travel', 'routes/pages/travel.tsx'),
 
+  route('product', 'routes/pages/product.tsx'),
+
+  route('reservation', 'routes/pages/reservation.tsx'),
+
   // * APIs
   ...prefix('api', [
     route('theme', 'routes/apis/theme.ts'),
