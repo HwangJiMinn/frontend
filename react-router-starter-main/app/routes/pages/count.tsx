@@ -29,7 +29,7 @@ const Count = () => {
       <CountButton
         symbol="-1 버튼"
         onClick={handleCountMinus}
-        // className="cursor-pointer bg-blue-100 p-[20px] hover:bg-blue-200"
+        className="cursor-pointer bg-red-100 p-[20px] hover:bg-red-200"
       />
     </div>
   );

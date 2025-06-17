@@ -9,6 +9,8 @@ export default [
 
   route('test', 'routes/pages/test.tsx'),
 
+  route('travel', 'routes/pages/travel.tsx'),
+
   // * APIs
   ...prefix('api', [
     route('theme', 'routes/apis/theme.ts'),

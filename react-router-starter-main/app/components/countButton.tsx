@@ -1,13 +1,15 @@
 interface CountButtonProps {
   symbol: string;
   onClick: () => void;
-  // className: string;
+  className?: string;
 }
 
-const CountButton = ({ symbol, onClick }: CountButtonProps) => {
+const CountButton = ({ symbol, onClick, className }: CountButtonProps) => {
   return (
     <button
-      className="cursor-pointer bg-green-100 p-[20px] hover:bg-green-200"
+      className={
+        className ? className : 'cursor-pointer bg-green-100 p-[20px] hover:bg-green-200'
+      }
       onClick={onClick}
     >
       {symbol}
