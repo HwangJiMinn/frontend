@@ -7,6 +7,9 @@ const Home = () => {
       <Link to="/count" className="hover:bg-red-100">
         카운트 라우터로 이동
       </Link>
+      <Link to="/test" className="hover:bg-red-100">
+        테스트 라우터로 이동
+      </Link>
     </div>
   );
 };

@@ -7,6 +7,8 @@ export default [
 
   route('count', 'routes/pages/count.tsx'),
 
+  route('test', 'routes/pages/test.tsx'),
+
   // * APIs
   ...prefix('api', [
     route('theme', 'routes/apis/theme.ts'),
