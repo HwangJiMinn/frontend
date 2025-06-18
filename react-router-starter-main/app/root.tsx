@@ -25,7 +25,7 @@ export const loader = async ({ request }: LoaderFunctionArgs) => {
     getThemeSession(request),
   ]);
   const url = new URL(request.url);
-  const isTest = url.pathname.includes('quest');
+  const isTest = url.pathname.includes('quest') || url.pathname.includes('result');
   return { lang: getLanguage(), ssrTheme: getTheme(), isTest };
 };
 
