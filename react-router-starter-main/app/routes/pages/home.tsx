@@ -32,7 +32,12 @@ const Home = () => {
         useMemo 라우트 이동
       </Link>
       <Link to="customHookWithCount">커스텀 훅을 사용한 카운트 라우트 이동</Link>
-      <Link to="fetchApi">api를 불러와서 데이터를 보여주는 라우트로 이동</Link>
+      <Link to="fetchApi">
+        SPA 방식으로 api를 불러와서 데이터를 보여주는 라우트로 이동
+      </Link>
+      <Link to="ssrFetchApi">
+        SSR 방식으로 api를 불러와서 데이터를 보여주는 라우트로 이동
+      </Link>
     </div>
   );
 };

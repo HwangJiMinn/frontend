@@ -30,6 +30,7 @@ export default [
   route('useMemo', 'routes/pages/useMemo.tsx'),
   route('customHookWithCount', 'routes/pages/custom-hook-with-count.tsx'),
   route('fetchApi', 'routes/pages/fetch-api.tsx'),
+  route('ssrFetchApi', 'routes/pages/ssr-fetch-api.tsx'),
   // * APIs
   ...prefix('api', [
     route('theme', 'routes/apis/theme.ts'),
