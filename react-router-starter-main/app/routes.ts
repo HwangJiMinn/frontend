@@ -33,6 +33,7 @@ export default [
   route('ssrFetchApi', 'routes/pages/ssr-fetch-api.tsx'),
   route('postApi', 'routes/pages/post-api.tsx'),
   route('ssrPostApi', 'routes/pages/ssr-post-api.tsx'),
+  route('fetchApiTest', 'routes/pages/fetch-api-test.tsx'),
   // * APIs
   ...prefix('api', [
     route('theme', 'routes/apis/theme.ts'),
