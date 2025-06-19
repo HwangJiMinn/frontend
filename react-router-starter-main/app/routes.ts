@@ -28,8 +28,8 @@ export default [
   route('result5', 'routes/pages/result/result5.tsx'),
 
   route('useMemo', 'routes/pages/useMemo.tsx'),
-  route('customHookWithCount',
-    'routes/pages/custom-hook-with-count.tsx'),
+  route('customHookWithCount', 'routes/pages/custom-hook-with-count.tsx'),
+  route('fetchApi', 'routes/pages/fetch-api.tsx'),
   // * APIs
   ...prefix('api', [
     route('theme', 'routes/apis/theme.ts'),
