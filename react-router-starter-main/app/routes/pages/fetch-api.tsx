@@ -1,40 +1,33 @@
 import { useEffect, useState } from 'react';
 
 const FetchApi = () => {
-  const [data, setData] = useState<any>([]);
-  const [loading, setLoading] = useState<boolean>(true);
-  const [error, setError] = useState<string | null>(null);
-
-  const [text, setText] = useState('');
+  const [data, setData] = useState<any>([]); // 데이터
+  const [loading, setLoading] = useState<boolean>(true); // 로딩
+  const [error, setError] = useState<string | null>(null); // 에러
 
   useEffect(() => {
+    // 최초 랜더링 시 한번만 실행
     const fetchData = async () => {
-      setLoading(true);
+      setLoading(true); // 최초 실행 시 로딩 true
       try {
-        const response = await fetch('https://jsonplaceholder.typicode.com/posts');
-        const result = await response.json();
-        setData(result);
+        const response = await fetch('https://jsonplaceholder.typicode.com/posts'); // 백엔드에서 준 api 경로를 fetch 한다
+        const result = await response.json(); // response를 data화
+        setData(result); // 백엔드에서 가져온 데이터를 data에 저장
         setError(null);
       } catch (error) {
-        setError(error.message || '오류가 발생했습니다.');
+        setError(error.message || '오류가 발생했습니다.'); // 오류 메세지 저장
         setData([]);
       } finally {
-        setLoading(false);
+        setLoading(false); // 전부 끝났을 시 loading을 false
       }
     };
 
-    fetchData();
+    fetchData(); // 함수 실행
   }, []);
 
   return (
     <div>
       <h1>전체 게시글 목록</h1>
-      <input
-        type="text"
-        value={text}
-        onChange={(e) => setText(e.target.value)}
-        placeholder="텍스트 변경"
-      />
       {loading && <div>불러오는중 ...</div>}
       {error && <div className="text-red-900">{error}</div>}
 
