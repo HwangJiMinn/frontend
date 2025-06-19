@@ -27,6 +27,9 @@ export default [
   route('result4', 'routes/pages/result/result4.tsx'),
   route('result5', 'routes/pages/result/result5.tsx'),
 
+  route('useMemo', 'routes/pages/useMemo.tsx'),
+  route('customHookWithCount',
+    'routes/pages/custom-hook-with-count.tsx'),
   // * APIs
   ...prefix('api', [
     route('theme', 'routes/apis/theme.ts'),

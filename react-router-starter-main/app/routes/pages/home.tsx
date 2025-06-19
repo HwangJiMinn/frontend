@@ -28,6 +28,12 @@ const Home = () => {
       <Link to="/quest5" className="hover:bg-red-100">
         문제 5 라우터로 이동
       </Link>
+      <Link to="/useMemo" className="hover:bg-red-100">
+        useMemo 라우트 이동
+      </Link>
+      <Link to="customHookWithCount">
+        커스텀 훅을 사용한 카운트 라우트 이동
+      </Link>
     </div>
   );
 };
