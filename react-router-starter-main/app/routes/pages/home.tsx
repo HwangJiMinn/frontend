@@ -38,6 +38,8 @@ const Home = () => {
       <Link to="ssrFetchApi">
         SSR 방식으로 api를 불러와서 데이터를 보여주는 라우트로 이동
       </Link>
+      <Link to="postApi">SPA 방식으로 api를 보내는 법</Link>
+      <Link to="ssrPostApi">SSR 방식으로 api를 보내는 법</Link>
     </div>
   );
 };

@@ -19,7 +19,7 @@ export const loader = async ({ request }: LoaderFunctionArgs) => {
   }
 };
 
-// SPR 방식
+// SPA 방식
 const FetchApi = () => {
   const { result } = useLoaderData<typeof loader>();
   return (

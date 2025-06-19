@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-// SPR 방식
+// SPA 방식
 const FetchApi = () => {
   const [data, setData] = useState<any>([]); // 데이터
   const [loading, setLoading] = useState<boolean>(true); // 로딩
