@@ -41,6 +41,7 @@ const Home = () => {
       <Link to="postApi">SPA 방식으로 api를 보내는 법</Link>
       <Link to="ssrPostApi">SSR 방식으로 api를 보내는 법</Link>
       <Link to="fetchApiTest">api 불러오기 테스트</Link>
+      <Link to="calculating">계산기</Link>
     </div>
   );
 };
